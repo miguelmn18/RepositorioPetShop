@@ -1,11 +1,11 @@
-import java.time.LocalDate;
+import java.util.Date;
 
 public interface ServicoPetShopIF {
-    public String getCodigo();
-    public LocalDate getData();
+    public int getCodigo();
+    public Date getData();
     public String getDescricao();
     public String getTamanhoAnimal();
-    public double getPreco();
+    public int getPreco();
 
 
 }

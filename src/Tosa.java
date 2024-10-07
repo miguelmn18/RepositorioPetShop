@@ -1,13 +1,8 @@
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Tosa extends ServicoBase{
-    public Tosa(LocalDate data, String codigo, String tamanhoAnimal, double preco) {
-        super(data, codigo, tamanhoAnimal, preco);
-    }
-    public double getPreco(){
-        return 0;
-    }
-    public String getDescricao(){
-        return null;
+    public Tosa(String tamanhoAnimal, int preco) {
+        super(tamanhoAnimal, preco);
     }
 }
