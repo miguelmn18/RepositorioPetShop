@@ -1,11 +1,9 @@
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Banho extends ServicoBase {
     String tamanhoPelo;
-
-    public Banho(String tamanhoAnimal, int preco, String tamanhoPelo) {
-        super(tamanhoAnimal, preco);
+    public Banho(LocalDate data, String codigo, String tamanhoAnimal, double preco, String tamanhoPelo) {
+        super(data, codigo, tamanhoAnimal, preco);
         this.tamanhoPelo = tamanhoPelo;
     }
 
@@ -16,8 +14,7 @@ public class Banho extends ServicoBase {
     public void setTamanhoPelo(String tamanhoPelo) {
         this.tamanhoPelo = tamanhoPelo;
     }
-
-    public int getPreco(){
+    public double getPreco(){
         return 0;
     }
     public String getDescricao(){
